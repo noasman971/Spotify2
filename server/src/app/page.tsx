@@ -1,6 +1,14 @@
 import Image from "next/image";
 import { supabase } from '../../supabaseClient';
 
+const fetchData = async () => {
+  const { data, error } = await supabase.from('Users').select('*');
+  if (error) {
+    console.error('Erreur lors de la récupération des données:', error);
+  } else {
+    console.log('Données récupérées:', data);
+  }
+};
 
 
 export default function Home() {
