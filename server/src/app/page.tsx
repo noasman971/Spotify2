@@ -1,11 +1,12 @@
-import Image from "next/image";
-import { supabase } from '../../supabaseClient';
-
-
+import Navbar from '../components/navbar/navbar'
 
 export default function Home() {
     return (
-        <p>test</p>
+        <>
+            <Navbar/>
+
+        </>
+
     )
 
 }
