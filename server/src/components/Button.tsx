@@ -9,7 +9,7 @@ interface ButtonProps {
 
 export function Button({text, classname, onClick, icon}: ButtonProps){
     return(
-        <button onClick={onClick} title="Rechercher">
+        <button onClick={onClick} title="Rechercher" className={classname}>
             {text&&text}
             {icon&&icon}
         </button>
