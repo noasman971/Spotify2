@@ -39,8 +39,8 @@ export default function Navbar() {
                 <Link href={"/"} >Télécharger</Link>
                 <div className="trait"></div>
                 <Link href={"/"}>Installer l&apos;appli</Link>
-                <Link href={"/register"} >S&apos;inscrire</Link>
-                <Link href={"/login"} className={"bg-white rounded-4xl px-3 py-2 text-black font-bold"}>Se connecter</Link>
+                <Link href={"/"} >S&apos;inscrire</Link>
+                <Link href={"/"} className={"bg-white rounded-4xl px-3 py-2 text-black font-bold"}>Se connecter</Link>
 
             </div>
 
