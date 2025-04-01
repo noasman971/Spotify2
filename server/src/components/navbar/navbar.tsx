@@ -13,14 +13,14 @@ export default function Navbar() {
         <nav className="navbar py-0.5 px-3 flex flex-row gap-10 w-full justify-between items-center bg-black text-[#B1B1B1]">
             <div className="flex items-center gap-7 justify-between">
                 <div className="w-10 h-10 relative ">
-                    <a href="/">
+                    <Link href="/">
                         <Image
                             src="/spotify-icon.png"
                             alt="Spotify logo"
                             fill
                             style={{ objectFit: "contain"}}
                         />
-                    </a>
+                    </Link>
 
                 </div>
 
