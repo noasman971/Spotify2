@@ -35,7 +35,7 @@ export default function Register(){
                                placeholder={"pseudo"} name={"pseudo"} isRequired={true}/>
                     </label>
                     <button formAction={signup}  className={"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"}>
-                        S&aposinscrire
+                        S&apos;inscrire
                     </button>
                     <button formAction={login}  className={"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"}>
                         Se connecter
