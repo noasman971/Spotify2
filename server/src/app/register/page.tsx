@@ -2,42 +2,14 @@
 import Navbar from "@/components/navbar/navbar";
 import "../globals.css"
 import {Input} from "@/components/input/input";
-import {useRouter} from "next/navigation";
 
 
 export default function Register(){
-    const router = useRouter();
 
-    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-        e.preventDefault();
-
-        try {
-            const formData = new FormData(e.currentTarget);
-            const email = formData.get("email");
-            const password = formData.get("password");
-            const pseudo = formData.get("pseudo");
-
-            const res = await fetch("/api/auth", {
-                method: "POST",
-                headers: {
-                    "content-type": "application/json",
-                },
-                body: JSON.stringify({email, password, pseudo}),
-
-            });
-
-            if (res.status === 201) {
-                router.push("/");
-            }
-        }
-        catch (error) {
-            console.error("Error:", error);
-        }
-    }
     return(
         <>
             <Navbar/>
-            <form onSubmit={handleSubmit} className={"flex flex-col items-center justify-center h-screen bg-gradient-to-r "}>
+            <form  className={"flex flex-col items-center justify-center h-screen bg-gradient-to-r "}>
             <div className={"text-white flex flex-col"}>
                 <h1 className={"text-3xl font-bold   text-center mt-10"}>
                     Inscrivez-vous pour commencer à écouter
